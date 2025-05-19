@@ -1,0 +1,25 @@
+<title>OMG tu m'as trouvé</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta charset="UTF-8">
+
+<script>
+	// Hahaha, heureusement que Sarah Wiertz ne sais pas lire du code, sinon elle aurait facilement découvert la solution
+	let maxTries = 3;
+	let tries = maxTries;
+	function check_password() {
+		input = document.getElementById("password-field").value;
+		error_msg = document.getElementById("password-message");
+		if (input === "sarahwiertzditseindewiche") {
+			window.location.href = "/mais-ou-est-ce";
+		}
+		else {
+			tries--;
+			error_msg.innerHTML = `Mot de passe incorrect. Tentatives restantes : ${tries}.`;
+			error_msg.style = "color: red";
+		}
+	}
+</script>
+<h1>Quel est le mot de passe?</h1>
+<input type="text" id="password-field">
+<input type="submit" onclick="check_password()" value="Envoyer">
+<p id="password-message"></p>

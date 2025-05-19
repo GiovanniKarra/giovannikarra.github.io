@@ -1,0 +1,45 @@
+<title>Chiffres</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/assets/css/main.css">
+
+
+<p>
+	C’est quoi 2? Pensez-y vraiment. Que représente ce symbole “2”. Ou, plus généralement, c’est quoi un nombre, ou, moins généralement, c’est quoi un nombre entier positif (en math on appelle ça un nombre naturel). Certains m’ont répondu “C’est le nombre après un” ou “C’est le fait d’avoir 2 de quelque chose” ou “1+1” ou “3-1”. 
+</p>
+
+<p>
+	Il s'avère que cette question est quand même un peu importante pour les mathématiciens. On aime quand nos objets sont bien définis et ne pas avoir une réponse concrète à une question aussi fondamentale que “C’est quoi un nombre?” est un peu terrifiante quand beaucoup de ton travail repose la dessus. 
+</p>
+
+<p>
+	Heureusement, plusieurs mathématiciens ont réussi à répondre à cette question avec succès. 
+</p>
+
+<p>
+	Un de ceux-ci était Peano. Sa façon de définir les naturels était de prendre un symbole “0” et une fonction s(n) appelée fonction successeur qui associe a chaque naturel le naturel d'après. Le nombre 2 dans cette définition ci serait donc le successeur de 1, qui lui-même est le successeur de 0. 2 s’écrira donc ce cette façon: s(s(0)). Il y a d’autres règles (axiomes) qui servent à s'assurer que le tout est bien défini mais je ne vais pas les détailler. 
+</p>
+
+<p>
+	Ce que l’on peut remarquer est que cette définition ne prend pas en compte la grandeur des naturels, seulement le fait que les naturels se suivent l’un après l’autre. Effectivement, pour les définir on n’utilise que leur ordre et la taille n’est jamais mentionné. 5 est le successeur de 4 mais rien dans les axiomes nous dit qu’il est plus grand. Et bonne chance pour faire apparaître les fractions à partir de que ça. 
+</p>
+
+<p>
+	Donc pour avoir un peu beaucoup plus de flexibilité, les mathématicien.nes utilisent plutôt la construction de Von Neumann. Dans cette construction le nombre 2 peut être vu comme “La classe d’équivalence de tous les ensembles contenant 2 objets”. Le nombre 2 répresentera donc réellement le fait d’avoir deux de quelque chose.
+</p>
+
+<p>
+	Mais vous l’aurez vu, on a utilisé 2 pour définir 2! Un très grand faux-pas mathématique qu’on va essayer d'éviter. (Les gens qui utilisent l’Hopital pour calculer   je vous vois)
+</p>
+
+<p>
+	On va donc commencer par définir 0 en tant que l’ensemble ne contenant rien, ce qui  tombe bien car il y en a qu’un. C’est l’ensemble vide et on va l’écrire { }. Ensuite, pour définir 1 on veut essayer de trouver un ensemble qui contient exactement 1 élément. On a déjà utilisé l’ensemble vide donc autant prendre l’ensemble qui contient celui-ci. 1 sera donc défini comme l’ensemble qui contient 0 (qui lui même est l’ensemble vide). On pourra donc dire que 1 = { { } }. De façon similaire on va définir 2 comme l’ensemble qui contient deux choses, 1 et 0. On écrira donc 2 = {1,0} = { { { } } , { } }. Et enfin on a N = {N-1, N-2, …. , 2, 1, 0}
+</p>
+
+<p>
+	Certains d’entre vous auront remarqué qu’on est en train de faire la même chose que Peano, on est parti de 0 et on a réussi à définir le nombre successeur à chaque fois. Mais cette fois on à réussi à garder le concept de la taille d’un naturel (car les nombres plus petits sont inclus dans les nombres plus grands) et on est aussi resté dans le cadre beaucoup plus flexible de la théorie des ensembles. Cette définition dans ce cadre nous permettra par la suite de construire les nombres négatifs, les fractions, et ensuite le reste des réels.
+</p>
+
+<p>
+	J’ai donc une dernière question pour vous, c’est quoi un ensemble?
+</p>

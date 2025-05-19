@@ -1,0 +1,41 @@
+<title>Elo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/assets/css/main.css">
+
+
+<p>
+	On se pose souvent la question : qui est le plus fort ? Dans bien des domaines, c’est compliqué de départager chacun, mais aux échecs, c’est beaucoup plus simple grâce à un indicateur unique : l’ELO.
+</p>
+
+<p>
+	Le plus fort du monde actuel est Magnus Carlsen, et il possède 2833 points ELO au moment de l'écriture de cette fiche toilette. Magnus écrase tous ses adversaires depuis des années, et est un génie comme le monde des échecs en a rarement rencontré. Il était donc vu comme celui qui allait atteindre une limite devenue symbolique, les 2900 ELOs. Magnus a d'ailleurs déclaré que c'était son objectif. 
+</p>
+
+<p>
+	Malheureusement il commence à se faire plutôt vieux pour un joueur d'échecs ( 34 ans ) , en tout cas pour remonter jusqu'à ce chiffre. Il y a eu des discussions pour changer la façon dont l'ELO est calculé, pour permettre plus de volatilité. La façon dont l'ELO est calculé, est souvent mal expliquée, heureusement, le kotangente est là ! 
+</p>
+
+<p>
+	Le niveau d’un joueur suit une sorte de courbe en cloche (une gaussienne) : la moyenne représente son niveau habituel, mais il peut parfois jouer au-dessus – quand il est en grande forme – ou en-dessous – quand il est fatigué ou malade. Son niveau est la valeur moyenne de cette cloche.
+</p>
+
+<p>
+	Quand deux joueurs s'affrontent, on prend la différence du premier et du deuxième, et si la moyenne de cette autre courbe est positive, alors le premier joueur a plus de chance de gagner la partie. La moyenne nous donne la probabilité calculée que le premier joueur gagne ( par exemple 50% s'ils ont le même niveau ). 
+</p>
+
+<p>
+	Prenons ici deux joueurs de 1500 ELO qui s’affrontent pour un total de 5 parties. Pour déterminer les points gagnés ou perdus, on regarde ensuite le résultat. Si les deux joueurs ont le même ELO, et que le premier gagne 3 fois sur les 5 et perd les 2 autres, le résultat est 60% de victoire, alors que le résultat attendu était 0.5 ( ce qui correspond à une série de nulles ). Il a donc surpassé par 10% sa quantité de victoires attendue. On calcule alors l’ELO des deux joueurs à l'aide de la formule qui suit : ELO_nouveau = ELO_ancien + 32( résultat  - résultat_attendu). Ce qui donne avec notre exemple : 1500 + 32 ( 0.6 - 0.5 ) = 1500 + 3.2 = 1503.2 pour le joueur 1. Et, car le joueur 2 a gagné 40% des parties son nouvel ELO sera de 
+</p>
+
+<p>
+	1500 + 32 ( 0.4 - 0.5 ) = 1496,8.  Nous pouvons voir alors que le maximum de points qu'il est possible de gagner en une partie est de 32 points. 
+</p>
+
+<p>
+	Mais revenons à Magnus. S’il retrouve la performance qu’il avait pendant son “prime”, qui a eu lieu du 31 juillet 2018 au 9 octobre 2020, il aurait alors 80% de chance d'atteindre les 2900 ELOs. Mais s' il garde son niveau actuel, ce qui a beaucoup de chance d’arriver, il aurait alors 4,5% de chance d’atteindre cet ELO.
+</p>
+
+<p>
+	Même si l'espoir semble perdu pour Magnus, il est très probable que cette limite soit franchie un jour. Des jeunes joueurs très prometteurs sont en effet présents dans le top 10 mondial ( notamment le français Alireza Firouzja, 21 ans ), et il est très probable que le niveau global augmente avec la venue de nouveaux outils.
+</p>
